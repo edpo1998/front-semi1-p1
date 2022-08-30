@@ -11,6 +11,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import PasswordIcon from '@mui/icons-material/Password';
 import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
+import IconButton from '@mui/material/IconButton';
 
 export default function RegistroUsuario() {
     return (
@@ -62,14 +63,16 @@ export default function RegistroUsuario() {
                     Carga tu foto de perfil:
                 </Typography>
                 <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
-                    <InsertPhotoIcon color="primary" />
-                    <input id="foto" variant="standard" type="file" />
+                    <IconButton color="primary" aria-label="upload picture" component="label">
+                        <input hidden accept="image/*" type="file" />
+                        <InsertPhotoIcon />
+                    </IconButton>
 
                 </Box>
             </CardContent>
             <CardActions>
-                    <Button size="medium">Registrar</Button>
-                    <Button size="medium">Cancelar</Button>
+                <Button size="medium">Registrar</Button>
+                <Button size="medium">Cancelar</Button>
             </CardActions>
         </Card>
     );
