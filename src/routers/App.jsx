@@ -9,6 +9,7 @@ import Layout from '../components/containers/Layout';
 import LoginUsuario from '../pages/login';
 import DashBoard from '../pages/principal';
 import RegistroUsuario from '../pages/registro';
+import SubirArchivo from '../pages/subir';
 
 // Pages
 //import Home from '../pages/Home';
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/registro" element={ <RegistroUsuario/> } />
           <Route path='/login' element={<LoginUsuario/>}/>
           <Route path='/dashboard' element={<DashBoard/>}/>
+          <Route path='/subir' element={<SubirArchivo/>}/>
         </Route>
       </Routes>
     </Router>

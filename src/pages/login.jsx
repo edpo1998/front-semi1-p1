@@ -41,7 +41,7 @@ export default function LoginUsuario() {
                 </Typography>
                 <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
                     <PasswordIcon color="primary" />
-                    <TextField id="pwd" variant="standard" />
+                    <TextField id="pwd" variant="standard" type='password'/>
                 </Box><br />                
             </CardContent>
             <CardActions>
