@@ -6,6 +6,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Layout from '../components/containers/Layout';
+import EditarArchivo from '../pages/editar';
 import LoginUsuario from '../pages/login';
 import DashBoard from '../pages/principal';
 import RegistroUsuario from '../pages/registro';
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='/login' element={<LoginUsuario/>}/>
           <Route path='/dashboard' element={<DashBoard/>}/>
           <Route path='/subir' element={<SubirArchivo/>}/>
+          <Route path='/editar' element={<EditarArchivo/>}/>
         </Route>
       </Routes>
     </Router>
