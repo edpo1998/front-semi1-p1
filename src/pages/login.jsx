@@ -7,13 +7,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
-import AccountCircle from '@mui/icons-material/AccountCircle';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import PasswordIcon from '@mui/icons-material/Password';
-import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
-import IconButton from '@mui/material/IconButton';
 
-export default function RegistroUsuario() {
+export default function LoginUsuario() {
     return (
         <Card sx={{ maxWidth: 550, maxHeight: 950, marginX: 80, marginY: 2 }}>
             <CardMedia
@@ -24,20 +21,14 @@ export default function RegistroUsuario() {
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div" align='center'>
-                    FORMULARIO DE REGISTRO
+                    LOG IN
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    Ingresa tus datos en el siguiente formulario para ser parte de este super almacenamiento.
+                    Ingresa tus datos para iniciar sesion.
                 </Typography>
             </CardContent>
             <CardContent>
-                <Typography variant="body1" color="text.secondary">
-                    Ingresa tu nombre:
-                </Typography>
-                <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
-                    <AccountCircle color="primary" />
-                    <TextField id="name" variant="standard" />
-                </Box><br />
+                
                 <Typography variant="body1" color="text.secondary">
                     Ingresa tu usuario:
                 </Typography>
@@ -51,28 +42,11 @@ export default function RegistroUsuario() {
                 <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
                     <PasswordIcon color="primary" />
                     <TextField id="pwd" variant="standard" type='password'/>
-                </Box><br />
-                <Typography variant="body1" color="text.secondary">
-                    Confirma tu contraseña:
-                </Typography>
-                <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
-                    <PasswordIcon color="primary" />
-                    <TextField id="pwd_confir" type="password" variant="standard" />
-                </Box><br />
-                <Typography variant="body1" color="text.secondary">
-                    Carga tu foto de perfil:
-                </Typography>
-                <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
-                    <IconButton color="primary" aria-label="upload picture" component="label">
-                        <input hidden accept="image/*" type="file" />
-                        <InsertPhotoIcon />
-                    </IconButton>
-
-                </Box>
+                </Box><br />                
             </CardContent>
             <CardActions>
-                <Button size="medium">Registrar</Button>
-                <Button size="medium">Cancelar</Button>
+                    <Button size="medium">Ingresar</Button>
+                    <Button size="medium">Registrarse</Button>
             </CardActions>
         </Card>
     );
