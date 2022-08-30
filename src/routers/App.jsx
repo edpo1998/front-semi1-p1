@@ -6,6 +6,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Layout from '../components/containers/Layout';
+import RegistroUsuario from '../pages/registro';
 
 // Pages
 //import Home from '../pages/Home';
@@ -16,7 +17,7 @@ const App = () => {
       <Routes>
         <Route element={ <Layout/> }>
           <Route path="/" element={ <h1>Hola </h1> } />
-          <Route path="/test" element={ <h1>Test </h1> } />
+          <Route path="/registro" element={ <RegistroUsuario/> } />
         </Route>
       </Routes>
     </Router>
