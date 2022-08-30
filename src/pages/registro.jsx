@@ -50,7 +50,7 @@ export default function RegistroUsuario() {
                 </Typography>
                 <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
                     <PasswordIcon color="primary" />
-                    <TextField id="pwd" variant="standard" />
+                    <TextField id="pwd" variant="standard" type='password'/>
                 </Box><br />
                 <Typography variant="body1" color="text.secondary">
                     Confirma tu contraseña:
