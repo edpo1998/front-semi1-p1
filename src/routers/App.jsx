@@ -7,13 +7,14 @@ import {
 } from "react-router-dom";
 import Layout from '../components/containers/Layout';
 import EditarArchivo from '../pages/editar';
+import EliminarArchivo from '../pages/eliminar';
 import LoginUsuario from '../pages/login';
 import DashBoard from '../pages/principal';
 import RegistroUsuario from '../pages/registro';
 import SubirArchivo from '../pages/subir';
 
 // Pages
-//import Home from '../pages/Home';
+//import Home from '../pages/Home'; 
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path='/dashboard' element={<DashBoard/>}/>
           <Route path='/subir' element={<SubirArchivo/>}/>
           <Route path='/editar' element={<EditarArchivo/>}/>
+          <Route path='/eliminar' element={<EliminarArchivo />}/>
         </Route>
       </Routes>
     </Router>
