@@ -5,7 +5,10 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import CartaAmigo from '../components/cartaAmigo';
+import CartaArchivo from '../components/cartaArchivo';
 import Layout from '../components/containers/Layout';
+import AgregarAmigo from '../pages/agregar';
 import EditarArchivo from '../pages/editar';
 import EliminarArchivo from '../pages/eliminar';
 import LoginUsuario from '../pages/login';
@@ -28,6 +31,9 @@ const App = () => {
           <Route path='/subir' element={<SubirArchivo/>}/>
           <Route path='/editar' element={<EditarArchivo/>}/>
           <Route path='/eliminar' element={<EliminarArchivo />}/>
+          <Route path='/agregar' element={<AgregarAmigo />}/>
+          <Route path='/cartaAmigo' element={<CartaAmigo />}/>
+          <Route path='/cartaArchivo' element={<CartaArchivo />}/>
         </Route>
       </Routes>
     </Router>
