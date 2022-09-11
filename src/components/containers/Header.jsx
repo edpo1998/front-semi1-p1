@@ -17,6 +17,8 @@ function Header(props) {
   
   const hasUser = Object.keys(user).length > 0;
 
+
+
   const headerClass = classNames('header', {
     isLogin,
     isRegister,
@@ -57,7 +59,7 @@ function Header(props) {
             
             :
             <li>
-              <Link to="/" onClick={showLogin}>
+              <Link to="/login" onClick={showLogin}>
                 Iniciar sesión
               </Link>
             </li>
